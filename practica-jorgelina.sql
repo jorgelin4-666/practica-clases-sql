@@ -11,3 +11,13 @@ CREATE TABLE cliente (
 
 
 SHOW TABLE FROM jorgelina_db;
+
+CREATE VIEW cliente_jorgelina AS (
+
+  SELECT 
+    nombre,
+    'SELECTION -> DATA' AS new_text
+  FROM 
+    jorgelina_db.cliente
+);
+
